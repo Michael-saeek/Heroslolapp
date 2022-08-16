@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Space+Mono&display=swap');
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -33,11 +35,14 @@ body {
 }
 
 .background-homecontent {
-  background-image: url('https://wallup.net/wp-content/uploads/2016/01/48713-Draven-League_of_Legends.jpg');
+  /*background-image: url('https://wallup.net/wp-content/uploads/2016/01/48713-Draven-League_of_Legends.jpg'); */
+  background: #141E30;  /* fallback for old browsers */
+background: linear-gradient(to right, #2a303c, #16243d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2rem;
   z-index: 0;
+  height: 100vh;
 }
 
 .background-login {
@@ -52,6 +57,36 @@ body {
 .effectglass {
   background-color: rgba(0,0,0, .6); 
   backdrop-filter: blur(10px);
+}
+
+.scaleEffect {
+  transform: scale(1);
+  transition: all 300ms ease-in-out;
+}
+
+.scaleEffect:hover {
+  transform: scale(1.1);
+}
+
+.imageChamp {
+  position: relative;
+  top: -30px;
+  left: -51px;
+  width: 100%;
+  height: 375px;
+  display: inline-block;
+  transform: rotate(15deg);
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.imageChamp:hover {
+  transform: scaleY(-25px);
+}
+
+.titleNavBar {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Mono', monospace;
 }
 
 h1 {

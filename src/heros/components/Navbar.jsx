@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 relative w-screen top-0 ">
+    <div className="navbar bg-neutral relative w-screen top-0 ">
       <div className="navbar-start">
         <div className="dropdown z-10">
           <label tabIndex="0" className="btn btn-ghost btn-circle">
@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost normal-case text-xl">Heroes App </a>
+        <a className="btn btn-ghost normal-case text-xl titleNavBar">Leagues of Legends App </a>
       </div>
 
  
