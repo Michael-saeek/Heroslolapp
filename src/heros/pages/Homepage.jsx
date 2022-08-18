@@ -4,36 +4,39 @@
 
 import ScreenChamp from '../components/ScreenChamp';
 import Contpositions from '../components/Contpositions';
+//import Cards from '../components/Cards';
 
 /* 
 Data generica: 
 https://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion.json
+Data individual:
+https://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion/Aatrox.json
 
 Assets champ
-https://ddragon.leagueoflegends.com/cdn/img/champion/loading/
+https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg'
+
+
+Splash assets
+http://ddragon.leagueoflegends.com/cdn/img/champion/splash/
 
 */
 
 const Homepage = () => {
   return (
-    <section className="background-homecontent flex flex-wrap overflow-y-hidden relative">
+    <section className="background-homecontent flex flex-col relative">
 
-      <section className="inline-flex flex-wrap w-11/12 justify-center relative h-80 overflow-y-hidden m-10 ">
+      <section className="flex w-full justify-center relative h-80 overflow-x-scroll overflow-y-hidden ">
+     
+ 
+
         <ScreenChamp champ="Khazix" number={2} />
         <ScreenChamp champ="Braum" number={2} />
         <ScreenChamp champ="Caitlyn" number={2} />
         <ScreenChamp champ="Fiora" number={2} />
-        <ScreenChamp champ="Graves" number={2} />
+    
 
-
-        { /*    
-        <ScreenChamp champ="Leona" number={2} />
-        <ScreenChamp champ="MasterYi" number={2} />
-        <ScreenChamp champ="Mordekaiser" number={2} />
-      
-        */
-        }
-   
+ 
+ 
       </section>
 
       <Contpositions/>

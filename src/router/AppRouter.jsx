@@ -6,16 +6,12 @@ import HeroesRoutes from '../heros/routes/HeroesRoutes'
 const AppRouter = () => {
   return (
     <>
-        <BrowserRouter>
-            <Routes>
 
-    
+            <Routes>
                 <Route path='/' element={<Loginpage/>} />
                 <Route path='/*' element={<HeroesRoutes/>} />
-
-
             </Routes>
-        </BrowserRouter>
+     
     </>
   )
 }

@@ -28,19 +28,19 @@ const Navbar = () => {
           >
               <li><NavLink to='/'>Logout</NavLink>     </li>
               <li> <NavLink to='/home'>Homepage</NavLink>     </li>
-             <li> <NavLink to='heros'>Heros</NavLink> </li>
+             <li> <NavLink to='/champion/name/skins'>Heros</NavLink> </li>
               
          
           </ul>
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost normal-case text-xl titleNavBar">Leagues of Legends App </a>
+        <a className="btn btn-ghost normal-case text-xl headerTitle">Leagues of Legends App </a>
       </div>
 
  
 
-      <div className="navbar-end">
+      <div className="navbar-end hidden sm:inline-flex">
 
       <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs mr-4" />
         <button className="btn btn-ghost btn-circle">

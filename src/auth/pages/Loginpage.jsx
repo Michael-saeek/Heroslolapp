@@ -15,7 +15,7 @@ const Loginpage = () => {
 
   return (
 
-    <section className='background-login h-screen flex flex-col justify-center items-center'>
+    <section className='background-login h-screen flex flex-col justify-center items-center bg-center'>
         <form className='effectglass p-14 rounded-full flex flex-col items-center'>
         <div className="mb-6">
           <label

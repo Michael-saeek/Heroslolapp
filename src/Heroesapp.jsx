@@ -1,18 +1,14 @@
-
-import AppRouter from "./router/AppRouter"
-
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './router/AppRouter';
 
 const Heroesapp = () => {
   return (
     <>
-    
-          <AppRouter/>
-   
-        
-    
-    
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default Heroesapp
+export default Heroesapp;

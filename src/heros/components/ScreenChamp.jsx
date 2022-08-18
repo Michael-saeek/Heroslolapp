@@ -3,7 +3,7 @@ const ScreenChamp = ({ champ, number = 0 }) => {
 
   return (
   
-      <div className="inline-flex h-full w-44 relative scaleEffect">
+      <div className="flex w-40 scaleEffect">
         <img
           className=" bg-no-repeat imageChamp "
           src={url}

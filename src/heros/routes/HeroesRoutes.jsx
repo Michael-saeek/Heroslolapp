@@ -1,25 +1,23 @@
-import {  Route, Routes } from "react-router-dom"
-import Footer from "../components/Footer"
-import Navbar from '../components/Navbar'
-import Homepage from '../pages/Homepage'
+import { Route, Routes } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Homepage from '../pages/Homepage';
+import ChampionPage from '../pages/ChampionPage';
 
 const HeroesRoutes = () => {
   return (
     <>
- 
-        <Navbar/>
-        <Routes>
+      <Navbar />
+      <Routes>
+        
+        <Route path="/home" element={<Homepage />} />
+        <Route path="/champion/name/*" element={<ChampionPage />} />
 
-            <Route path='/home' element={<Homepage/>} />
-         
+      </Routes>
 
+      <Footer />
+    </>
+  );
+};
 
-        </Routes>
-
-        <Footer/>
-
-</>
-  )
-}
-
-export default HeroesRoutes
+export default HeroesRoutes;
